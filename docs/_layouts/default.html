@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ site.baseurl }}/">Timing the Chaos</a>
+      <nav class="site-nav">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/threat-model/">Threat Model</a>
+        <a href="{{ site.baseurl }}/results/">Results</a>
+        <a href="{{ site.baseurl }}/defenses/">Defenses</a>
+        <a href="{{ site.baseurl }}/reproducibility/">Reproducibility</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap content">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Timing the Chaos — Saimoon Al Farshi Oman and A. B. M. Alim Al Islam, Dept. of CSE, BUET ·
+      CSE 6207 course project · Submitted to IEEE TDSC ·
+      <a href="https://github.com/saimoon-oman/timing-the-chaos">Repository</a> ·
+      <a href="https://github.com/saimoon-oman/timing-the-chaos/wiki">Wiki</a> ·
+      MIT License (novel code; DhakaSim excluded)</p>
+    </div>
+  </footer>
+</body>
+</html>

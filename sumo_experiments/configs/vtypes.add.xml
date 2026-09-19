@@ -1,0 +1,24 @@
+<!-- Fleet mix for SUMO cross-validation of "Timing the Chaos".
+     Documented mapping from DhakaSim vehicle classes (no per-vehicle
+     calibration; class proportions are the experimental factor, as in
+     the paper). Leaders/unequipped run SUMO-native Krauss with these
+     parameters; equipped followers are driven by the external Gipps
+     controller (scripts/gipps_controller.py) using the same accel/decel
+     values, mirroring DhakaSim FT_METHOD=4 semantics. -->
+<additional>
+    <!-- slow class (rickshaw/CNG-like): low top speed, gentle accel -->
+    <vType id="slow" vClass="passenger"
+           maxSpeed="5.0" accel="1.0" decel="3.5" emergencyDecel="5.0"
+           length="3.0" minGap="1.5" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="LC2013"/>
+    <!-- medium class (car-like) -->
+    <vType id="med" vClass="passenger"
+           maxSpeed="9.0" accel="1.8" decel="4.5" emergencyDecel="7.0"
+           length="4.5" minGap="2.0" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="LC2013"/>
+    <!-- fast class (bus/truck-like): high top speed, long footprint -->
+    <vType id="fast" vClass="passenger"
+           maxSpeed="13.9" accel="2.2" decel="5.5" emergencyDecel="8.0"
+           length="7.0" minGap="2.5" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="LC2013"/>
+</additional>

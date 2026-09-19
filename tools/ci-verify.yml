@@ -1,0 +1,38 @@
+name: verify
+
+# Recomputes every headline number directly from results/runs.csv and fails
+# if any published figure disagrees with the data. This is the same script
+# that produces results/VERIFICATION.md.
+
+on:
+  push:
+    paths:
+      - 'results/**'
+      - 'analysis/**'
+      - '.github/workflows/verify.yml'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install analysis dependencies
+        run: pip install --quiet numpy scipy pandas
+
+      - name: Recompute every headline number from runs.csv
+        run: python3 analysis/verify.py
+
+      - name: Fail if the report is stale
+        run: |
+          if ! git diff --quiet -- results/VERIFICATION.md; then
+            echo "::error::results/VERIFICATION.md is out of date -- rerun analysis/verify.py and commit it."
+            git --no-pager diff -- results/VERIFICATION.md
+            exit 1
+          fi

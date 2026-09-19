@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Timing the Chaos: Temporal Sensor Desynchronization Attacks in Non-Lane-Based Traffic Systems"
+abstract: >-
+  A research study of temporal sensor desynchronization (desync) attacks on
+  V2V position updates in non-lane-based traffic systems. Six attack scenarios
+  are implemented in a modified DhakaSim microsimulator and validated across
+  three topologies, with a DTW-based detector, a causal radar-discrepancy
+  delay estimator, and velocity-compensated gap correction as defenses.
+authors:
+  - family-names: Oman
+    given-names: Saimoon Al Farshi
+    affiliation: "BUET, Dhaka"
+    orcid: ""
+version: "1.0.0"
+date-released: "2026-08-20"
+license: MIT
+keywords:
+  - vehicular security
+  - temporal desynchronization
+  - V2X
+  - traffic simulation
+  - time-to-collision
+  - non-lane-based traffic
+repository-code: "https://github.com/saimoon-oman/timing-the-chaos"

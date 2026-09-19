@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.jar binary
+*.zip binary
+*.pptx binary
+*.ppt binary
+*.mp4 binary
+*.xlsx binary
+*.osm binary
+*.class binary

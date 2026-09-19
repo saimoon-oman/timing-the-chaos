@@ -1,0 +1,37 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Raw per-vehicle gap traces (regenerable; ~1.76 GB in the local tree) ---
+**/gap_errors.csv
+
+# --- Experiment outputs (regenerable by re-running the campaign; ~1.8 GB / 28k files) ---
+experiments/results/
+experiments/logs/
+
+# --- DhakaSim runtime outputs (regenerated per simulation run) ---
+dhakasim/statistics/
+
+# --- Local working notes (not distributed) ---
+AGENTS.md
+
+# --- GitHub Wiki pages (canonical source lives in the GitHub wiki repo) ---
+wiki/
+
+# --- Local-only: course materials, submissions, drafts, demos (per owner request) ---
+demo/
+course-documents/
+IEEE TDSC/
+paper-v4/
+presentation/
+
+# --- Stale embedded VCS metadata inside dhakasim/ ---
+dhakasim/.git_disabled/

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: thesisfinal.DhakaSim
+Class-Path: libraries/commons-math3-3.6.1.jar libraries/jmathio.jar
+

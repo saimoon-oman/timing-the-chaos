@@ -1,0 +1,24 @@
+<!-- Base SUMO configuration template for the cross-validation campaign.
+     The runner (scripts/run_sumo.py) copies this template per run,
+     substituting %%ROUFILE%% with the run's demand file. -->
+<configuration>
+    <input>
+        <net-file value="../networks/shahbagh.net.xml"/>
+        <route-files value="%%ROUFILE%%"/>
+        <additional-files value="../configs/vtypes.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="300"/>
+        <step-length value="1.0"/>
+    </time>
+    <processing>
+        <time-to-teleport value="120"/>
+        <collision.check-junctions value="true"/>
+        <collision.mingap-factor value="0"/>
+        <eager-insert value="false"/>
+    </processing>
+    <random_number>
+        <seed value="%%SEED%%"/>
+    </random_number>
+</configuration>

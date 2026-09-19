@@ -1,0 +1,105 @@
+{
+ "sumo.ref_pd3_mae": 12.94,
+ "sumo.ref_pd3_meanlead": 4.77,
+ "sumo.ref_pd3_negfrac_mov": 0.9932,
+ "sumo.ref_pd3_taueff": 2.711,
+ "sumo.collapse_slope": 2.681,
+ "sumo.collapse_r2": 0.9959,
+ "sumo.collapse_n": 12,
+ "sumo.dhk_collapse_slope": 4.533,
+ "sumo.dhk_collapse_r2": 0.9987,
+ "sumo.dhk_collapse_n": 8,
+ "sumo.dhk_collapse_icept": -1.535,
+ "sumo.dhk_taueff_mean": 3.967,
+ "sumo.collapse_icept": 0.243,
+ "sumo.collapse_taueff_mean": 2.736,
+ "sumo.collapse_slope_ci95": [
+  2.625,
+  2.735
+ ],
+ "sumo.collapse_slope_boot_n": 2000,
+ "sumo.dose_spearman": 1.0,
+ "sumo.dose_maes": {
+  "1.0": 3.69,
+  "2.0": 8.36,
+  "3.0": 12.94,
+  "5.0": 20.63,
+  "7.0": 26.46
+ },
+ "sumo.ttc_true_viol": 0.0876,
+ "sumo.ttc_perc_viol": 0.0833,
+ "sumo.ttc_nclose": 6651,
+ "sumo.ttc_median_bias": -4.5,
+ "sumo.coll_nonjunction_att": 0,
+ "sumo.coll_nonjunction_base": 0,
+ "sumo.det_tpr_001": 0.8248,
+ "sumo.det_thresh_001": 0.38,
+ "sumo.det_tpr_01": 0.8257,
+ "sumo.poserr_frac_stale": 0.1724,
+ "sumo.det_tpr_001_negsigned": 0.9967,
+ "sumo.det_abs_tpr_001": 0.9879,
+ "sumo.det_curve_signed": {
+  "0.0005": {
+   "tpr": 0.8247,
+   "thresh": 0.406
+  },
+  "0.001": {
+   "tpr": 0.8248,
+   "thresh": 0.38
+  },
+  "0.002": {
+   "tpr": 0.8251,
+   "thresh": 0.342
+  },
+  "0.005": {
+   "tpr": 0.8254,
+   "thresh": 0.292
+  },
+  "0.01": {
+   "tpr": 0.8257,
+   "thresh": 0.232
+  },
+  "0.02": {
+   "tpr": 0.8261,
+   "thresh": 0.178
+  },
+  "0.05": {
+   "tpr": 0.8266,
+   "thresh": 0.097
+  },
+  "0.1": {
+   "tpr": 0.8269,
+   "thresh": 0.022
+  }
+ },
+ "sumo.vcomp_oracle": 0.6193,
+ "sumo.vcomp_causal": 0.6841,
+ "sumo.vcomp_fixed": 0.3354,
+ "sumo.kalman_tpr_001": 0.0016,
+ "sumo.plaus_tpr_001": 0.0011,
+ "sumo.variant_maes": {
+  "pd": 12.94,
+  "if": 6.59,
+  "pdr": 5.2,
+  "jo": 0.8
+ },
+ "sumo.dhk_recomputed_tpr_001": {
+  "pd": 0.9911,
+  "if": 0.9891,
+  "pdr": 0.9895,
+  "jo": 0.3292
+ },
+ "sumo.dhk_poserr_frac_stale": 0.0027,
+ "sumo.dhk_abs_tpr_001": 0.8782,
+ "h_verdicts": {
+  "H1": true,
+  "H2": true,
+  "H3": true,
+  "H4": false,
+  "H5det": false,
+  "H5det_cond": true,
+  "H5corr": true,
+  "H5base_documented": true,
+  "H6": true
+ }
+}

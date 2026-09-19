@@ -1,0 +1,13 @@
+title: Timing the Chaos
+description: Temporal sensor desynchronization attacks on V2V position updates in non-lane-based traffic — 6 variants in DhakaSim, 8,100 runs, TTC safety analysis, radar detection + causal correction, SUMO-validated. IEEE TDSC.
+url: https://saimoon-oman.github.io
+baseurl: /timing-the-chaos
+markdown: kramdown
+permalink: pretty
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - assets/css/style.scss

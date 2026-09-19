@@ -1,0 +1,25 @@
+<!-- Fleet mix for the SUMO LC-model sensitivity subset (Step 5 follow-up).
+     Identical to vtypes.add.xml except laneChangeModel SL2015 (SUMO's
+     sublane model, which permits non-lane-disciplined lateral movement
+     closer to Dhaka traffic). Requires lateral-resolution 0.5 m
+     (matching the paper's strip width ws). Car-following stays Krauss for
+     unequipped vehicles; equipped followers stay on the external Gipps
+     controller, so the ONLY change vs the main campaign is lateral
+     behavior. -->
+<additional>
+    <!-- slow class (rickshaw/CNG-like): low top speed, gentle accel -->
+    <vType id="slow" vClass="passenger"
+           maxSpeed="5.0" accel="1.0" decel="3.5" emergencyDecel="5.0"
+           length="3.0" minGap="1.5" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="SL2015"/>
+    <!-- medium class (car-like) -->
+    <vType id="med" vClass="passenger"
+           maxSpeed="9.0" accel="1.8" decel="4.5" emergencyDecel="7.0"
+           length="4.5" minGap="2.0" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="SL2015"/>
+    <!-- fast class (bus/truck-like): high top speed, long footprint -->
+    <vType id="fast" vClass="passenger"
+           maxSpeed="13.9" accel="2.2" decel="5.5" emergencyDecel="8.0"
+           length="7.0" minGap="2.5" sigma="0.5"
+           carFollowModel="Krauss" laneChangeModel="SL2015"/>
+</additional>
