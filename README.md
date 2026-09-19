@@ -5,8 +5,6 @@
 
 **Timing the Chaos: Temporal Sensor Desynchronization Attacks in Non-Lane-Based Traffic Systems**
 
-Submitted to **IEEE Transactions on Dependable and Secure Computing (TDSC)** —
-Saimoon Al Farshi Oman and A. B. M. Alim Al Islam (BUET).
 
 Cooperative vehicles brake on the basis of positions their neighbours broadcast
 over the air. A decade of security work has asked whether those positions are
@@ -17,9 +15,7 @@ corrupts gap perception, biases safety estimates, and costs throughput, with no
 integrity check on content able to see it.
 
 > **Course project (CSE 6207 — Advanced Dependable and Fault-Tolerant Computer
-> Systems, BUET MSc).** Manuscript (12-page TDSC paper + supplementary) is
-> published as a [GitHub Release](../../releases) on this repository.
-
+> Systems, BUET MSc).** 
 ---
 
 ## Table of Contents
@@ -221,23 +217,11 @@ delays are configured, not realised — high-delay results are conservative).
 - **GitHub Wiki:** <https://github.com/saimoon-oman/timing-the-chaos/wiki>
   (Home, Threat Model, Attack Variants, Experimental Design, Results,
   Defences, Negative Results, Reproducibility, FAQ)
-- **Manuscript + supplementary (TDSC, 12 pages):** see
-  [Releases](../../releases).
 
 ## Citation
 
 A machine-readable `CITATION.cff` is included — GitHub renders a
 "Cite this repository" button from it.
-
-```bibtex
-@misc{oman2026timing,
-  title  = {Timing the Chaos: Temporal Sensor Desynchronization Attacks
-            in Non-Lane-Based Traffic Systems},
-  author = {Oman, Saimoon Al Farshi and Islam, A. B. M. Alim Al},
-  year   = {2026},
-  note   = {Submitted to IEEE Trans. Dependable and Secure Computing}
-}
-```
 
 ---
 
