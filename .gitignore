@@ -32,6 +32,7 @@ course-documents/
 IEEE TDSC/
 paper-v4/
 presentation/
+docs/
 
 # --- Stale embedded VCS metadata inside dhakasim/ ---
 dhakasim/.git_disabled/

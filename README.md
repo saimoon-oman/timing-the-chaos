@@ -1,5 +1,7 @@
 # Timing the Chaos
 
+<!--
+
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Website](https://img.shields.io/badge/website-live-brightgreen)
 
@@ -248,3 +250,6 @@ analysis pipeline, defenses, documentation) is released under the
 [MIT License](LICENSE). DhakaSim itself is a third-party academic
 microsimulator and is **not** covered by that license; it retains its
 original terms. See `dhakasim/libraries/` for third-party dependencies.
+
+
+-->
